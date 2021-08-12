@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+
+.top-circle {
+    position: absolute;
+    transform: translate(-30%, -50%);
+}
+
+.bottom-circle {
+    position: absolute;
+    transform: translate(75%, 40%);
+}
+
+
+/* .photo {
+    display: inline-flex;
+    justify-content: center;
+} */
+
+.main-card{
+    width: 350px;
+	height: 400px;
+	/* background-color: red; */
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+    margin: auto;
+    border-radius: 18px;
+    box-shadow: 50px 50px 200px rgb(60,162,174);
+    /* z-index: 1; */
+}
+
+.cover-photo {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.image{
+    position: relative;
+    top: -50px;
+    border: 5px solid white;
+}
+
+.content {
+    position: relative;
+    top: -20px;
+}
+/* 
+@media screen and (max-width: 768px) {
+    .top-circle {
+        position: absolute;
+        
+    }
+} */
