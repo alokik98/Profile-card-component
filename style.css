@@ -1,22 +1,30 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
-    background: hsl(185, 75%, 39%);
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
     overflow: hidden;
+    background: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .top-circle {
+    
     position: absolute;
-    transform: translate(-30%, -50%);
+    transform: translate(-25%, -55%);
 }
 
 .bottom-circle {
+    color: hsl(227, 10%, 46%);
     position: absolute;
-    transform: translate(75%, 40%);
+    bottom: 0;
+    right: 0;
+    transform: translate(30%, 55%);
 }
 
 
@@ -26,20 +34,16 @@ body {
 } */
 
 .main-card{
-    width: 350px;
-	height: 400px;
-	/* background-color: red; */
+    width: 320px;
+	
 	
 	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-  	
-    margin: auto;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 18px;
     box-shadow: 50px 50px 200px rgb(60,162,174);
-    /* z-index: 1; */
+    color: hsl(0, 0%, 59%);
 }
 
 .cover-photo {
@@ -54,12 +58,57 @@ body {
 
 .content {
     position: relative;
+    top: -30px;
+}
+
+.name {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.state {
+    position: relative;
     top: -20px;
 }
-/* 
-@media screen and (max-width: 768px) {
+
+.stats {
+    position: relative;
+    top: -15px;
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.first, .second, .third {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 706px) {
     .top-circle {
-        position: absolute;
-        
+        transform: translate(-70%, -55%);
     }
-} */
+    
+    .bottom-circle {
+        transform: translate(70%, 55%);
+    }
+}
+
+@media screen and (max-height:700px) {
+    .bottom-circle {
+        transform: translate(70%, 75%);
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .main-card {
+        width: 320px;
+    }
+}

@@ -9,13 +9,17 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; color: black; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -27,36 +31,34 @@
     </div>
     <div class="d-inline-flex flex-column bg-white main-card">
       <div>
-        <img src="images/bg-pattern-card.svg" alt="card background" class="cover-photo">
+        <img src="images/bg-pattern-card.svg" alt="card background" class="img-fluid cover-photo">
       </div>
       <div class="d-flex justify-content-center">
         <img src="images/image-victor.jpg" alt="victor image" class="rounded-circle image">
       </div>
       <div class="text-center content">
-        <span>Victor Crest </span><span class="age">26</span>
+        <span class="name">Victor Crest </span><span class="age">26</span>
       </div>
       <div class="text-center state">
         <span>London</span>
       </div>
       <hr>
-      <div class="d-flex px-4 stats">
-        <div class="p-3">
-          <span class="px-4">80K <br>
-            Followers</span>
+      <div class="d-flex px-4 justify-content-between pt-3 stats">
+        <div class="d-inline-flex flex-column text-center">
+          <span class="first">80K</span>
+          <span class="text">Followers</span>
         </div>
-        <div class="p-3 pe-5"><span>803K <br>
-          Likes</span></div>
-          <div class="p-3">
-            <span class="px-2">1.4K <br>
-              Photos</span>
-          </div>
+        <div class="d-inline-flex flex-column text-center">
+          <span class="second">803K</span>
+          <span class="text">Likes</span>
+        </div>
+        <div class="d-inline-flex flex-column text-center">
+          <span class="third">1.4K</span>
+          <span class="text">Photos</span>
+        </div>
       </div>
     </div>
   
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
